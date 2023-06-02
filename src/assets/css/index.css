@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.ql-container.ql-snow {
+  border: 0px;
+  padding: 0px 0px 20px 0px;
+  /* min-height: 200px !important; */
+  /* width: 100% !important; */
+  /* position: absolute; */
+}
+.ql-editor {
+  margin-bottom: 12px !important;
+}
+
+@layer utilities {
+  .add_btn {
+    @apply absolute left-2 bottom-2 cursor-pointer outline-none focus:outline-none focus:border-0;
+  }
+  .btn {
+    @apply rounded-full p-2 outline-none;
+    background: #d6f4e1;
+  }
+}
