@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState, Fragment } from "react";
+import React, { useEffect, useState, Fragment } from "react";
 import ReactQuill, { Quill } from "react-quill";
 import { FaPlus } from "react-icons/fa";
 import { AiFillPicture } from "react-icons/ai";
@@ -48,10 +48,10 @@ Quill.register("formats/video", VideoBlot);
 
 function App() {
   const [content, setContent] = useState("");
-  const [postUrl, setPostUrl] = useState("");
+
   const [choice, setChoice] = useState<string | unknown | null>(null);
   const [imageUrl, setImageUrl] = useState("");
-  const [selection, setSelection] = useState({ index: 0, length: 0 });
+  const [selection] = useState({ index: 0, length: 0 });
   const [quillRef, setQuillRef] = useState<ReactQuill | null>(null);
 
   const modules: Record<string, any> = {

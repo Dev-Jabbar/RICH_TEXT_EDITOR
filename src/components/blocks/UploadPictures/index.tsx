@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { Modal, Upload } from "../../common";
+import { Modal } from "../../common";
 // import ReactQuill from 'react-quill';
 
 type Props = {

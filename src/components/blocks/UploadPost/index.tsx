@@ -1,5 +1,5 @@
-import React, { ChangeEvent, useState } from "react";
-import { Modal, Upload } from "../../common";
+import { ChangeEvent, useState } from "react";
+import { Modal } from "../../common";
 
 type Props = {
   closeModal(): void;
